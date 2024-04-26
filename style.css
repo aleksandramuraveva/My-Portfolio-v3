@@ -1,0 +1,236 @@
+:root {
+
+	--background: radial-gradient(circle, rgba(255,250,250,1) 0%, rgba(241,238,255,1) 49%);
+  --grey: hsl(72, 0%, 90%);
+  --yellow: hsl(72, 100%, 90%);
+  --purple: hsl(282, 90%, 90%);
+  --light-blue: hsl(240, 100%, 90%);
+  --yellow: hsl(47, 100%, 90%);
+
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    /*font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;*/
+
+	background: rgb(255,250,250);
+	background: radial-gradient(circle, rgba(255,250,250,1) 0%, rgba(241,238,255,1) 49%);
+	cursor: none;
+	border: 1px dashed green;
+}
+
+.container {
+	max-width: 1000px;
+	width: 92%;
+	margin-inline: auto;
+	border: 1px solid black
+}
+
+.cursor {
+	z-index: 999;
+	position: fixed;
+	background: #2696E8;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	pointer-events: none;
+	box-shadow: 0 0 20px #2696E8, 0 0 60px #2696E8, 0 0 100px #2696E8;
+	transform: translate(-50%,-50%);
+	animation: colors 5s infinite;
+	display: none;
+
+}
+
+@keyframes colors {
+	0%{
+		filter: hue-rotate(0deg);
+	}
+	100%{
+		filter: hue-rotate(360deg);
+	}
+}
+
+.cursor::before {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #2696E8; 
+	opacity: 0.2;
+	transform: translate(-30%, -30%);
+}
+
+/*.........Nav style........*/
+
+li{
+	list-style: none;
+}
+
+ul {
+	padding-left:0;
+	margin-top: 0;
+}
+
+a {
+	color: grey;
+	text-decoration: none;
+}
+
+.navbar {
+/*	min-height: 70px;*/
+/*	display: flex;
+	justify-content: space-between;
+	align-items: center;*/
+	padding: 0 24px;
+
+	text-align: center;
+}
+
+header {
+	position: relative;
+	background: yellow;
+}
+
+.nav-branding {
+	font-size: 2rem;
+/*	z-index: 100; my code*/
+}
+
+.nav__link {
+	transition: 0.7s ease;
+}
+
+.nav__link:hover {
+	color: var(--light-blue);
+}
+
+.sidebar {
+	border: 1px solid green;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 100vh;
+	background:var(--background);
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.sidebar:hover {
+	width: 300px;
+}
+
+.sidebar ul {
+	border: 3px dashed blue;
+	position: relative;
+	height: 100vh;
+
+}
+
+.sidebar ul li {
+	cursor: pointer;
+}
+
+/*.sidebar ul li:hover{
+	background: #fff;
+}
+*/
+.sidebar ul li a{
+	position: relative;
+	display: flex;
+	white-space: nowrap;
+}
+.sidebar ul li a .icon ,
+.nav__branding
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 60px;
+	height: 60px;
+	font-size: 1.5em;
+	color: ;
+}
+
+.logo__text {
+	font-weight: 500;
+}
+
+.sidebar ul li a .text{
+	position: relative;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	min-width: 60px;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.sidebar ul li.logo {
+	margin-bottom: 50px;
+}
+
+
+.socials {
+	position: absolute;
+	bottom: 2rem;
+	width: 100%;
+}
+
+
+/*.........Nav style end........*/
+
+
+/*.........  ........*/
+
+.main {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	gap: 2em;
+
+}
+
+.hero {
+	margin-left: 70px;
+}
+
+section .project{
+	min-width: 300px;
+	background-color: steelblue;
+
+}
+
+
+
+
+
+
+
+/*......... media queries  ........*/
+@media(max-width:768px) {
+	.navbar {
+		position: fixed;
+	}
+
+	.project {
+		margin-left: 70px;
+	}
+
+	.main {
+	display: block;
+	
+}
+
+}
