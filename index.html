@@ -4,10 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
+	<!-- Remix Icons CDN -->
 	<link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
     rel="stylesheet"
 	/>
+	<!-- Swiper JS -->
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+	/>
+	<!-- main css -->
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
@@ -71,19 +78,60 @@
 	</header>
 
 	<section class="hero">
-		<h1>Hello there, I'm Aleksandra!</h1>
-		<p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda animi velit nostrum aliquam, ab, ipsa. Perferendis, dicta, omnis. Fugit iure harum voluptatum exercitationem doloribus minima quibusdam praesentium sunt alias. Tempora possimus distinctio ullam, nam architecto inventore corporis? Doloremque mollitia accusantium aspernatur. Perferendis, saepe. Ducimus ea accusantium voluptate nisi, facere aliquam necessitatibus! Magni doloremque repellat, natus ad pariatur. Quas, praesentium quis!</p>
+		<div class="hero__content">
+			<h1 class="hero__title">Hello there, I'm Aleksandra!</h1>
+			<p class="hero__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda animi velit nostrum aliquam, ab, ipsa. Perferendis, dicta, omnis. Fugit iure harum voluptatum exercitationem doloribus minima quibusdam praesentium sunt alias. Tempora possimus distinctio ullam, nam architecto inventore corporis? Doloremque mollitia accusantium aspernatur. Perferendis, saepe. Ducimus ea accusantium voluptate nisi, facere aliquam necessitatibus! Magni doloremque repellat, natus ad pariatur. Quas, praesentium quis!
+			</p>
+		</div>
 	</section>
+	
 	<section class="projects">
 		<div class="project">
-			ffdolor sit amet consectetur adipisicing elit. Assumenda animi velit nostrum aliquam, ab, ipsa. Perferendis, dicta, omnis. Fugit iure harum voluptatum exercitationem doloribus minima quibusdam praesentium sunt alias. Tempora possimus distinctio ullam, nam architecto inventore corporis? Doloremque mollitia accusantium aspernatur. Perferendis, saepe. Ducimus ea accusantium voluptate nisi, facere aliquam necessitatibus! Magni doloremque repellat, natus ad pariatu
+
+
+			<!-- Slider main container -->
+			<div class="swiper">
+			  <!-- Additional required wrapper -->
+			  <div class="swiper-wrapper">
+			    <!-- Slides -->
+			    <div class="swiper-slide">
+			    	<div class="project__card">
+			    		<div class="project__video"></div>
+			    		<div class="project__description">
+			    			<h3>Projectname</h3>
+			    			<p>Css, js</p>
+			    			<button class="github">Github</button>
+			    			<button class="demo">Watch demo</button>
+			    		</div>
+
+			    	</div>
+			    </div>
+			    <div class="swiper-slide">Slide 2</div>
+			    <div class="swiper-slide">Slide 3</div>
+			    ...
+			  </div>
+			  <!-- If we need pagination -->
+			  <div class="swiper-pagination"></div>
+
+			  <!-- If we need navigation buttons -->
+			  <div class="swiper-button-prev"></div>
+			  <div class="swiper-button-next"></div>
+
+			  <!-- If we need scrollbar -->
+			  <div class="swiper-scrollbar"></div>
+			</div>
+
+
+
+
 		</div>
 	</section>
 </div>
 </main>
 
-
-	
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- main JS file -->
 	<script src="./app.js"></script>
 </body>
 </html>

@@ -1,6 +1,9 @@
+@import "reset.css";
+
 :root {
 
-	--background: radial-gradient(circle, rgba(255,250,250,1) 0%, rgba(241,238,255,1) 49%);
+	--background: linear-gradient(225deg, #e6e1e1, #ffffff);;
+
   --grey: hsl(72, 0%, 90%);
   --yellow: hsl(72, 100%, 90%);
   --purple: hsl(282, 90%, 90%);
@@ -20,9 +23,7 @@ body {
 
     /*font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;*/
-
-	background: rgb(255,250,250);
-	background: radial-gradient(circle, rgba(255,250,250,1) 0%, rgba(241,238,255,1) 49%);
+	background: linear-gradient(225deg, #e6e1e1, #ffffff);
 	cursor: none;
 	border: 1px dashed green;
 }
@@ -31,12 +32,12 @@ body {
 	max-width: 1000px;
 	width: 92%;
 	margin-inline: auto;
-	border: 1px solid black
+/*	border: 1px solid black*/
 }
 
 .cursor {
 	z-index: 999;
-	position: fixed;
+	position: absolute;
 	background: #2696E8;
 	width: 20px;
 	height: 20px;
@@ -97,7 +98,7 @@ a {
 
 header {
 	position: relative;
-	background: yellow;
+	/*position: fixed;*/
 }
 
 .nav-branding {
@@ -114,7 +115,7 @@ header {
 }
 
 .sidebar {
-	border: 1px solid green;
+	/*border: 1px solid green;*/
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -123,6 +124,11 @@ header {
 	background:var(--background);
 	overflow: hidden;
 	transition: 0.5s;
+
+	border-radius: 5%;
+	box-shadow:  -5px 5px 15px #ebe6e6,
+             5px -5px 15px #ffffff;
+  z-index: 99;
 }
 
 .sidebar:hover {
@@ -130,9 +136,10 @@ header {
 }
 
 .sidebar ul {
-	border: 3px dashed blue;
+	/*border: 1px dashed blue;*/
 	position: relative;
 	height: 100vh;
+
 
 }
 
@@ -160,7 +167,17 @@ header {
 	height: 60px;
 	font-size: 1.5em;
 	color: ;
+
+	border-radius: 50%;
+	background: linear-gradient(225deg, #e6e1e1, #ffffff);
+	box-shadow:  -5px 5px 15px #ebe6e6,
+             5px -5px 15px #ffffff;
+
+
 }
+
+/*#fffafa  #f1eeff*/
+
 
 .logo__text {
 	font-weight: 500;
@@ -175,6 +192,8 @@ header {
 	font-size: 1rem;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
+
+	margin-left: 1rem;
 }
 
 .sidebar ul li.logo {
@@ -202,35 +221,169 @@ header {
 
 }
 
+section {
+	/*border: 3px solid yellow;*/
+}
+
 .hero {
+	width: 100%;
+	padding: 2rem 0.5rem;
 	margin-left: 70px;
 }
 
-section .project{
+
+/*.hero__content {
+	margin-left: 70px;
+}*/
+
+.hero__title {
+	font-size: 1.85rem;
+	font-family: cursive;
+	margin-bottom: 1rem;
+}
+
+.hero h1 {
+	padding: 1rem;
+	text-align: center;
+}
+
+.hero p {
+	padding: 2.5rem;
+}
+
+.hero h1,
+.hero p {
+	border-radius: 100px;
+	background: linear-gradient(225deg, #e6e1e1, #ffffff);
+	box-shadow:  -5px 5px 15px #ebe6e6,
+             5px -5px 15px #ffffff;
+}
+
+
+/*......projects section...*/
+/*section .project{
 	min-width: 300px;
 	background-color: steelblue;
+	background-color: lavender;
 
+}*/
+
+.projects {
+	width: 100%;
+	padding: 2rem 0.5rem;
+	display flex;
+	justify-content: center;
+	align-items: center;
+ 
+
+
+}
+
+.project {
+
+	overflow: hidden;
+	padding: 2rem;
+	
+	border-radius: 100px;
+	background: linear-gradient(225deg, #e6e1e1, #ffffff);
+	box-shadow:  -5px 5px 15px #ebe6e6,
+             5px -5px 15px #ffffff;
+	/*padding: 2rem 0.5rem;*/
+}
+
+section .project{
+	/*background-color: lightyellow;*/
+	/*border-radius: 100px;*/
+
+}
+
+.swiper {
+
+	border:3px dashed lavender;
+  max-width: 100%;
+  height: 350px;
+  /*z-index: 0;*/
+}
+
+.swiper-wrapper,
+.swiper-scrollbar {
+/*	z-index: 0;*/
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+	color: white;
+	/*z-index: 0;*/
+}
+
+.swiper-button-prev {
+  left: 50%;
+  top: 1%; 
+  transform: rotate(90deg);
+  transform-origin: left center;
+}
+
+.swiper-button-next {
+  left: 50%; 
+  top: 90%; 
+  transform: rotate(90deg);
+  transform-origin: left center;
+}
+
+
+.project__video {
+	height: 180px;
+	background-color: black;
+	margin-bottom: 1rem;
+}
+
+.project__description {
+	border: 1px solid red;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	grid-gap: 0.2rem;
+}
+
+button {
+	margin: 0.1rem;
+	background: yellow;
+	padding: 0.2rem 0.2rem;
 }
 
 
 
+
+/*	position: relative;
+	z-index: -1;*/
 
 
 
 
 /*......... media queries  ........*/
 @media(max-width:768px) {
+
 	.navbar {
 		position: fixed;
-	}
-
-	.project {
-		margin-left: 70px;
 	}
 
 	.main {
 	display: block;
 	
-}
+	}
 
+
+	.hero {
+		width: 80%;
+	}
+
+	.hero__title {
+		font-size: 1.5rem;
+	}
+
+	.project {
+		margin-top: 17rem;
+	/*	margin-left: 70px;*/
+	}
 }
