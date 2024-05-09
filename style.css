@@ -20,7 +20,7 @@
 body {
     margin: 0;
     min-height: 100vh;
-
+    font-family: cursive;
     /*font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;*/
 	background: linear-gradient(225deg, #e6e1e1, #ffffff);
@@ -103,7 +103,7 @@ header {
 
 .nav-branding {
 	font-size: 2rem;
-/*	z-index: 100; my code*/
+/*	z-index: 100;*/
 }
 
 .nav__link {
@@ -143,7 +143,7 @@ header {
 
 }
 
-.sidebar ul li {
+.sidebar ul li:not(:first-child) {
 	cursor: pointer;
 }
 
@@ -239,7 +239,6 @@ section {
 .hero__title {
 	font-size: 1.85rem;
 	font-family: cursive;
-	margin-bottom: 1rem;
 }
 
 .hero h1 {
@@ -249,6 +248,7 @@ section {
 
 .hero p {
 	padding: 2.5rem;
+	margin-top: 1rem;
 }
 
 .hero h1,
@@ -259,14 +259,22 @@ section {
              5px -5px 15px #ffffff;
 }
 
+.hero__skills {
+	text-align: center;
+}
+
+.hero p img {
+	margin: 0.2rem;
+	width: 30px;
+}
+
+/*.ts {
+	border-radius: 30%;
+}*/
+
 
 /*......projects section...*/
-/*section .project{
-	min-width: 300px;
-	background-color: steelblue;
-	background-color: lavender;
 
-}*/
 
 .projects {
 	width: 100%;
@@ -275,14 +283,12 @@ section {
 	justify-content: center;
 	align-items: center;
  
-
-
 }
 
 .project {
 
-	overflow: hidden;
-	padding: 2rem;
+/*	overflow: hidden;*/
+	padding: 2rem 0.5rem;
 	
 	border-radius: 100px;
 	background: linear-gradient(225deg, #e6e1e1, #ffffff);
@@ -299,7 +305,7 @@ section .project{
 
 .swiper {
 
-	border:3px dashed lavender;
+	/*border:3px dashed lavender;*/
   max-width: 100%;
   height: 350px;
   /*z-index: 0;*/
@@ -312,9 +318,18 @@ section .project{
 
 .swiper-button-prev, 
 .swiper-button-next {
-	color: white;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.7s ease;
 	/*z-index: 0;*/
 }
+
+.swiper-button-prev:hover, 
+.swiper-button-next:hover {
+	color: var(--light-blue);
+}
+
+
 
 .swiper-button-prev {
   left: 50%;
@@ -331,25 +346,59 @@ section .project{
 }
 
 
-.project__video {
-	height: 180px;
-	background-color: black;
+.project__img{
+	/*height: 180px;
+	background-color: #fdcddc;*/
 	margin-bottom: 1rem;
 }
 
+.project__img img {
+	border-radius: 100px;
+	object-fit: cover;
+	width: 100%;
+	max-height: 180px;
+}
+
 .project__description {
-	border: 1px solid red;
+	padding: 1rem;
+	/*border: 1px dashed red;*/
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	grid-gap: 0.2rem;
+	border-radius: 100px;
+	background: linear-gradient(225deg, #e6e1e1, #ffffff);
+	box-shadow:  -5px 5px 15px #ebe6e6,
+             5px -5px 15px #ffffff;
 }
 
-button {
+.project__description h3{ 
+	font-weight: 600;
+}
+
+.project__buttons {
+	margin-top: 0.4rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.project__buttons button {
+	width: 40%;
 	margin: 0.1rem;
-	background: yellow;
-	padding: 0.2rem 0.2rem;
+	/*background: #fff;*/
+	padding: 0.5rem 0.2rem;
+	transition: 0.7s ease;
+	border-radius: 100px;
+	background: linear-gradient(225deg, #e6e1e1, #ffffff);
+	box-shadow:  -5px 5px 15px #ebe6e6,
+             5px -5px 15px #ffffff;
+  cursor: pointer;
+}
+
+.project__buttons button:hover {
+	color: var(--light-blue);
 }
 
 
@@ -373,6 +422,11 @@ button {
 	
 	}
 
+	.sidebar,
+	.sidebar ul {
+		height: 90vh;
+	}
+
 
 	.hero {
 		width: 80%;
@@ -385,5 +439,18 @@ button {
 	.project {
 		margin-top: 17rem;
 	/*	margin-left: 70px;*/
+	}
+}
+
+
+@media(max-width:450px) {
+
+	.sidebar,
+	.sidebar ul {
+		height: 60vh;
+	}
+
+	.project {
+		margin-top: 2rem;
 	}
 }
