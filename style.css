@@ -143,9 +143,6 @@ header {
 
 }
 
-.sidebar ul li:not(:first-child) {
-	cursor: pointer;
-}
 
 /*.sidebar ul li:hover{
 	background: #fff;
@@ -156,9 +153,7 @@ header {
 	display: flex;
 	white-space: nowrap;
 }
-.sidebar ul li a .icon ,
-.nav__branding
-{
+.sidebar ul li a .icon {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -179,16 +174,18 @@ header {
 /*#fffafa  #f1eeff*/
 
 
-.logo__text {
-	font-weight: 500;
+select {
+	
 }
 
-.sidebar ul li a .text{
+.sidebar ul li a .text,
+.nav__lang {
+	/*border: 1px dashed blue;*/
 	position: relative;
 	height: 60px;
 	display: flex;
 	align-items: center;
-	min-width: 60px;
+	min-width: 80px;
 	font-size: 1rem;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
@@ -424,7 +421,7 @@ section .project{
 
 	.sidebar,
 	.sidebar ul {
-		height: 90vh;
+		height: 93vh;
 	}
 
 
