@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
+	<!--to prevent the error as I don’t have a favicon yet -->
+	<link rel="shortcut icon" href="#">
 	<!-- Remix Icons CDN -->
 	<link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
@@ -23,45 +25,39 @@
 	<div class="container main">
 	<header>
 
-		<!-- 	<ul class="nav-menu">
-				<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">About</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-			</ul> -->
-
 			<nav class="nav sidebar">
 		<ul>
 			<li class="logo nav__item">
 				<a href="#" class="nav__link">
 					<span class="icon"><!-- AM --><i class="ri-global-line"></i></span><span><select class="nav__lang" id="language-selector">
-  				<option value="en">English</option>
-  				<option value="ru">Русский</option>
+						<option value="ru">Русский</option>
+  					<option value="en">English</option>
 					</select></span>
 				</a>
 			</li>
 			<li class="nav__item">
 				<a href="#" class="nav__link">
 					<span class="icon"><i class="ri-home-smile-line"></i></span>
-					<span class="text">Home</span>
+					<span class="text" data-i18n="main">Главная</span>
 				</a>
 			</li>
 			<li class="nav__item">
 				<a href="#" class="nav__link">
 					<span class="icon"><i class="ri-user-line"></i></span>
-					<span class="text">About me</span>
+					<span class="text" data-i18n="link-about-me">Обо мне</span>
 				</a>
 			</li>
 			<li class="nav__item">
 				<a href="#" class="nav__link">
 					<span class="icon"><i class="ri-folder-line"></i></span>
-					<span class="text">Projects</span>
+					<span class="text" data-i18n="link-projects">Проекты</span>
 				</a>
 			</li>
 			<div class="socials">
 				<li class="nav__item">
 					<a href="#" class="nav__link">
 						<span class="icon"><i class="ri-github-line"></i></span>
-						<span class="text">Github</span>
+						<span class="text">GitHub</span>
 					</a>
 				</li>
 				<li class="nav__item">
@@ -82,8 +78,8 @@
 
 	<section class="hero">
 		<div class="hero__content">
-			<h1 class="hero__title">Hello there, I'm Aleksandra!</h1>
-			<p class="hero__text">I’m a software engineer, interested in everything from design to the logical challenges of algorithms. <!-- Tempora possimus distinctio ullam, nam architecto inventore corporis? Doloremque mollitia accusantium aspernatur. Perferendis, saepe. Ducimus ea accusantium voluptate nisi, facere aliquam necessitatibus! Magni doloremque repellat, natus ad pariatur. Quas, praesentium quis! -->
+			<h1 class="hero__title" data-i18n="hero-title">Привет, я Александрa!</h1>
+			<p class="hero__text" data-i18n="hero-text">Разработчица, которую интересует все - от дизайна до логических задач, связанных с алгоритмами.
 			</p>
 			<p class="hero__skills">
 				<img src="./img/vue.png" alt="">
@@ -114,12 +110,12 @@
 			    			<img src="./img/StickyNotes.png" alt="">
 			    		</div>
 			    		<div class="project__description">
-			    			<h3>Sticky Notes</h3>
+			    			<h3 data-i18n="project-1-title">Липкие Заметки</h3>
 			    			<p>HTML, CSS, JS</p>
 			    		<!-- 	<p>Css, js</p> -->
 			    			<div class="project__buttons">
 			    				<button class="github">GitHub</button>
-			    				<button class="demo">Watch demo</button>
+			    				<button class="demo" data-i18n="demo-btn">Смотреть сайт</button>
 			    			</div>
 			    		</div>
 			    	</div>
@@ -133,12 +129,12 @@
 			    			<img src="./img/RecipeApp.png" alt="">
 			    		</div>
 			    		<div class="project__description">
-			    			<h3>Recipe Search Site</h3>
+			    			<h3 data-i18n="project-2-title">Сайт по поиску рецептов</h3>
 			    			<p>HTML, CSS, JS, Edamam API</p>
 			    		<!-- 	<p>Css, js</p> -->
 			    			<div class="project__buttons">
 			    				<button class="github">GitHub</button>
-			    				<button class="demo">Watch demo</button>
+			    				<button class="demo" data-i18n="demo-btn">Смотреть сайт</button>
 			    			</div>
 			    		</div>
 			    	</div>			    	
@@ -153,12 +149,12 @@
 			    			<img src="./img/DesignStudio.png" alt="">
 			    		</div>
 			    		<div class="project__description">
-			    			<h3>Landing page</h3>
+			    			<h3 data-i18n="project-3-title">Лэндинг</h3>
 			    			<p>HTML, CSS, JS</p>
 			    		<!-- 	<p>Css, js</p> -->
 			    			<div class="project__buttons">
 			    				<button class="github">GitHub</button>
-			    				<button class="demo">Watch demo</button>
+			    				<button class="demo" data-i18n="demo-btn">Смотреть сайт</button>
 			    			</div>
 			    		</div>
 			    	</div>
@@ -172,12 +168,12 @@
 			    			<img src="./img/DreamDanceSchool.png" alt="">
 			    		</div>
 			    		<div class="project__description">
-			    			<h3>Landing page</h3>
+			    			<h3 data-i18n="project-4-title">Лэндинг</h3>
 			    			<p>HTML, CSS, JS</p>
 			    		<!-- 	<p>Css, js</p> -->
 			    			<div class="project__buttons">
 			    				<button class="github">GitHub</button>
-			    				<button class="demo">Watch demo</button>
+			    				<button class="demo" data-i18n="demo-btn">Смотреть сайт</button>
 			    			</div>
 			    		</div>
 			    	</div>
