@@ -1,9 +1,11 @@
+/*reset css file*/
 @import "reset.css";
+/*import google font*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
 :root {
 
 	--background: linear-gradient(225deg, #e6e1e1, #ffffff);;
-
   --grey: hsl(72, 0%, 90%);
   --yellow: hsl(72, 100%, 90%);
   --purple: hsl(282, 90%, 90%);
@@ -18,14 +20,15 @@
 }
 
 body {
-    margin: 0;
-    min-height: 100vh;
-    font-family: cursive;
-    /*font-family: 'Roboto', sans-serif;
-    font-size: 1.3rem;*/
-	background: linear-gradient(225deg, #e6e1e1, #ffffff);
+	color: #555;
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  /*font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;*/
+	background: var(--background);
 	cursor: none;
-	border: 1px dashed green;
+/*	border: 1px dashed green;*/
 }
 
 .container {
@@ -82,7 +85,7 @@ ul {
 }
 
 a {
-	color: grey;
+	
 	text-decoration: none;
 }
 
@@ -107,6 +110,7 @@ header {
 }
 
 .nav__link {
+	color: grey;
 	transition: 0.7s ease;
 }
 
@@ -139,15 +143,12 @@ header {
 	/*border: 1px dashed blue;*/
 	position: relative;
 	height: 100vh;
+	min-height: 512px;
 
 
 }
 
 
-/*.sidebar ul li:hover{
-	background: #fff;
-}
-*/
 .sidebar ul li a{
 	position: relative;
 	display: flex;
@@ -235,7 +236,6 @@ section {
 
 .hero__title {
 	font-size: 1.85rem;
-	font-family: cursive;
 }
 
 .hero h1 {
@@ -246,6 +246,7 @@ section {
 .hero p {
 	padding: 2.5rem;
 	margin-top: 1rem;
+	line-height: 1.3;
 }
 
 .hero h1,
@@ -371,7 +372,7 @@ section .project{
 }
 
 .project__description h3{ 
-	font-weight: 600;
+	font-weight: 700;
 }
 
 .project__buttons {
@@ -381,7 +382,10 @@ section .project{
 }
 
 
-.project__buttons button {
+.project__buttons a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 40%;
 	margin: 0.1rem;
 	/*background: #fff;*/
@@ -391,12 +395,17 @@ section .project{
 	background: linear-gradient(225deg, #e6e1e1, #ffffff);
 	box-shadow:  -5px 5px 15px #ebe6e6,
              5px -5px 15px #ffffff;
-  cursor: pointer;
+  	cursor: pointer;
 }
 
-.project__buttons button:hover {
+.project__buttons a:hover {
 	color: var(--light-blue);
 }
+
+/*.project__buttons a {
+
+	 cursor: pointer;
+}*/
 
 
 
@@ -444,10 +453,10 @@ section .project{
 
 	.sidebar,
 	.sidebar ul {
-		height: 60vh;
+		height: 78vh;
 	}
 
 	.project {
-		margin-top: 2rem;
+		margin-top: 10rem;
 	}
 }

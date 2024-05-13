@@ -36,37 +36,37 @@
 				</a>
 			</li>
 			<li class="nav__item">
-				<a href="#" class="nav__link">
+				<a href="#hero" class="nav__link">
 					<span class="icon"><i class="ri-home-smile-line"></i></span>
 					<span class="text" data-i18n="main">Главная</span>
 				</a>
 			</li>
 			<li class="nav__item">
-				<a href="#" class="nav__link">
+				<a href="#about-me" class="nav__link">
 					<span class="icon"><i class="ri-user-line"></i></span>
 					<span class="text" data-i18n="link-about-me">Обо мне</span>
 				</a>
 			</li>
 			<li class="nav__item">
-				<a href="#" class="nav__link">
+				<a href="#projects" class="nav__link">
 					<span class="icon"><i class="ri-folder-line"></i></span>
 					<span class="text" data-i18n="link-projects">Проекты</span>
 				</a>
 			</li>
 			<div class="socials">
 				<li class="nav__item">
-					<a href="#" class="nav__link">
+					<a href="https://github.com/aleksandramuraveva" target="_blank"class="nav__link">
 						<span class="icon"><i class="ri-github-line"></i></span>
 						<span class="text">GitHub</span>
 					</a>
 				</li>
 				<li class="nav__item">
-					<a href="#" class="nav__link">
+					<a href="https://t.me/Afourmi" target="_blank" class="nav__link">
 						<span class="icon"><i class="ri-telegram-line"></i></span>
 						<span class="text">Telegram</span>
 					</a>
 				</li><li class="nav__item">
-					<a href="#" class="nav__link">
+					<a href="https://twitter.com/Aleks713067" target="_blank" class="nav__link">
 						<span class="icon"><i class="ri-twitter-x-line"></i></span>
 						<span class="text">Twitter</span>
 					</a>
@@ -76,25 +76,25 @@
 	</nav>
 	</header>
 
-	<section class="hero">
+	<section class="hero" id="hero">
 		<div class="hero__content">
 			<h1 class="hero__title" data-i18n="hero-title">Привет, я Александрa!</h1>
-			<p class="hero__text" data-i18n="hero-text">Разработчица, которую интересует все - от дизайна до логических задач, связанных с алгоритмами.
+			<p class="hero__text" id="about-me" data-i18n="hero-text">Разработчица, которую интересует все - от дизайна до логических задач, связанных с алгоритмами.
 			</p>
-			<p class="hero__skills">test
-				<img src="./Img/vue.png" alt="">
-				<img src="./Img/js4.png" alt="">
-				<img src="./Img/html5.png" alt="">
-				<img src="./img/css.png" alt="">
+			<p class="hero__skills">
+				<img src="./Img/vue.png" alt="vue.js">
+				<img src="./Img/js4.png" alt="js">
+				<img src="./Img/html5.png" alt="html5">
+				<img src="./Img/css.png" alt="css">
 				<img src="./Img/typescript.png" alt="">
-				<img src="./Img/php.png" alt="">
-				<img src="./Img/mysql.png" alt="">
-				<img src="./Img/sass.png" alt="">
+				<img src="./Img/php.png" alt="typescript">
+				<img src="./Img/mysql.png" alt="mysql">
+				<img src="./Img/sass.png" alt="sass">
 			</p>
 		</div>
 	</section>
 
-	<section class="projects">
+	<section class="projects" id="projects">
 		<div class="project">
 
 
@@ -107,15 +107,15 @@
 
 			    	<div class="project__card">
 			    		<div class="project__img">
-			    			<img src="./Img/StickyNotes.png" alt="">
+			    			<img src="./Img/StickyNotes.png" alt="sticky notes site image">
 			    		</div>
 			    		<div class="project__description">
 			    			<h3 data-i18n="project-1-title">Липкие Заметки</h3>
 			    			<p>HTML, CSS, JS</p>
 			    		<!-- 	<p>Css, js</p> -->
 			    			<div class="project__buttons">
-			    				<button class="github">GitHub</button>
-			    				<button class="demo" data-i18n="demo-btn">Смотреть сайт</button>
+			    				<a href="https://github.com/aleksandramuraveva/sticky-notes" target="_blank" class="github">GitHub</a>
+			    				<a href="https://stickynotes-am.web.app" target="_blank" class="demo" data-i18n="demo-btn">Смотреть сайт</a>
 			    			</div>
 			    		</div>
 			    	</div>
@@ -126,15 +126,15 @@
 
 			    	<div class="project__card">
 			    		<div class="project__img">
-			    			<img src="./Img/RecipeApp.png" alt="">
+			    			<img src="./Img/RecipeApp.png" alt="recipe search site">
 			    		</div>
 			    		<div class="project__description">
 			    			<h3 data-i18n="project-2-title">Сайт по поиску рецептов</h3>
 			    			<p>HTML, CSS, JS, Edamam API</p>
 			    		<!-- 	<p>Css, js</p> -->
 			    			<div class="project__buttons">
-			    				<button class="github">GitHub</button>
-			    				<button class="demo" data-i18n="demo-btn">Смотреть сайт</button>
+			    				<a href="https://github.com/aleksandramuraveva/recipe-search-site" target="_blank" class="github">GitHub</a>
+			    				<a href="https://recipesearch-am.web.app" target="_blank" class="demo" data-i18n="demo-btn">Смотреть сайт</a>
 			    			</div>
 			    		</div>
 			    	</div>			    	
@@ -146,15 +146,15 @@
 
 			    	<div class="project__card">
 			    		<div class="project__img">
-			    			<img src="./Img/DesignStudio.png" alt="">
+			    			<img src="./Img/DesignStudio.png" alt="design studio landing page">
 			    		</div>
 			    		<div class="project__description">
 			    			<h3 data-i18n="project-3-title">Лэндинг</h3>
 			    			<p>HTML, CSS, JS</p>
 			    		<!-- 	<p>Css, js</p> -->
 			    			<div class="project__buttons">
-			    				<button class="github">GitHub</button>
-			    				<button class="demo" data-i18n="demo-btn">Смотреть сайт</button>
+			    				<a href="https://github.com/aleksandramuraveva/interior-design-landing-page" target="_blank" class="github">GitHub</a>
+			    				<a href="https://interiordesign-lp-am.web.app" target="_blank" class="demo" data-i18n="demo-btn">Смотреть сайт</a>
 			    			</div>
 			    		</div>
 			    	</div>
@@ -165,15 +165,15 @@
 			    	
 			    	<div class="project__card">
 			    		<div class="project__img">
-			    			<img src="./Img/DreamDanceSchool.png" alt="">
+			    			<img src="./Img/DreamDanceSchool.png" alt="dream dance school landing page">
 			    		</div>
 			    		<div class="project__description">
 			    			<h3 data-i18n="project-4-title">Лэндинг</h3>
 			    			<p>HTML, CSS, JS</p>
 			    		<!-- 	<p>Css, js</p> -->
 			    			<div class="project__buttons">
-			    				<button class="github">GitHub</button>
-			    				<button class="demo" data-i18n="demo-btn">Смотреть сайт</button>
+			    				<a href="https://github.com/aleksandramuraveva/dancing-school-site" target="_blank" class="github">GitHub</a>
+			    				<a href="https://dancingschool-lp-am.web.app" target="_blank" class="demo" data-i18n="demo-btn">Смотреть сайт</a>
 			    			</div>
 			    		</div>
 			    	</div>

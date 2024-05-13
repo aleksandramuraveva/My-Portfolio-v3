@@ -35,18 +35,17 @@ document.addEventListener("mouseout", () => {
 
 //Changing language of the site
 
-console.log("hm");
 
 function loadLanguage(lang) {
   fetch(`${lang}.json`)
     .then(response => response.json())
     .then(translations => {
-    	 console.log(translations);
+    	 // console.log(translations);
       document.querySelectorAll('[data-i18n]').forEach(el => {
 
       
         const key = el.getAttribute('data-i18n');
-        	console.log(translations[key]);
+        	// console.log(translations[key]);
 
         el.textContent = translations[key];
 
@@ -61,7 +60,7 @@ let langSelector = document.getElementById('language-selector');
 
 langSelector.addEventListener('change', function(e) {
   loadLanguage(e.target.value);
-  console.log("it works");
+  // console.log("it works");
 });
 
 
