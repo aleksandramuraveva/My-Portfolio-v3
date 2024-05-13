@@ -3,6 +3,9 @@
 ## Description
 This is my portfolio site, built with HTML, CSS, and JavaScript. It showcases my projects and skills as a web developer.
 
+## Future Work
+- Rewrite the application in Vue.js
+
 ## Getting Started
 
 ### Prerequisites
