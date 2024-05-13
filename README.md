@@ -3,6 +3,9 @@
 ## Description
 This is my portfolio site, built with HTML, CSS, and JavaScript. It showcases my projects and skills as a web developer.
 
+## Features
+- Multilingual support: The site can be viewed in multiple languages. Switch to English by clicking on the change language icon.
+
 ## Future Work
 - Rebuild the application in Vue.js
 
