@@ -1,0 +1,16 @@
+{
+  "name": "my-portfolio-v3",
+  "version": "1.0.0",
+  "description": "This is my portfolio site, built with HTML, CSS, and JavaScript. It showcases my projects and skills as a web developer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"public/**/*.{html,js,css}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}

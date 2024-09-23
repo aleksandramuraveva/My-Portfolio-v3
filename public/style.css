@@ -277,7 +277,7 @@ section {
 .projects {
 	width: 100%;
 	padding: 2rem 0.5rem;
-	display flex;
+	/*display: flex;*/
 	justify-content: center;
 	align-items: center;
  
