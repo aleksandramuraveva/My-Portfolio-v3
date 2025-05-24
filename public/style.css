@@ -74,6 +74,14 @@ body {
   transform: translate(-30%, -30%);
 }
 
+/* CSS */
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
 /*.........Nav style........*/
 
 li {
@@ -220,9 +228,13 @@ section {
   margin-left: 70px;
 }
 
-/*.hero__content {
-	margin-left: 70px;
-}*/
+.hero__content {
+  margin-top: 1.8rem;
+  max-width: 400px;
+  /*display: flex;
+	flex-direction: column;
+	gap: 0.6rem;*/
+}
 
 .hero__title {
   font-size: 1.7rem;
@@ -429,6 +441,15 @@ section .project {
   .sidebar,
   .sidebar ul {
     height: 78vh;
+  }
+
+  .hero__content {
+    margin-top: 0rem;
+  }
+
+  .hero p img {
+    width: 20px;
+    margin: 0.1rem;
   }
 
   .project {
